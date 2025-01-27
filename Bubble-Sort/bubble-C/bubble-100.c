@@ -7,7 +7,7 @@ void bubbleSort(int arr[], int n) {
     int x, y, temp;
     int troca;
     for (x = 0; x < n - 1; x++) {
-        troca = 0; // Verifica se houve troca
+        troca = 0; // verifica troca
         for (y = 0; y < n - 1 - x; y++) {
             if (arr[y] > arr[y + 1]) {
                 // Troca os elementos
@@ -36,18 +36,16 @@ int main() {
 
     int n = sizeof(numerosAleatorios) / sizeof(numerosAleatorios[0]);
 
-    // Inicia o temporizador
     clock_t inicio = clock();
 
-    // Chama a função bubbleSort para ordenar o array
+    //ordenar o array
     bubbleSort(numerosAleatorios, n);
 
     clock_t fim = clock();
 
-    // Calcula o tempo de execução em segundos
     double tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
-    printf("Tempo de execucao do Bubble Sort: %f segundos\n", tempo_execucao);
+    printf("tempo de execucao: %f segundos\n", tempo_execucao);
 
     return 0;
 }
