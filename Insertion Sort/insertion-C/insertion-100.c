@@ -1,13 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-// Função Insertion Sort
+
 void insertionSort(int arr[], int n) {
     int x, y, chave;
     for (x = 1; x < n; x++) {
         chave = arr[x];
         y = x - 1;
 
-        // Move os elementos maiores que a chave uma posição à frente
+        // move os elementos maiores que a chave uma posição à frente
         while (y >= 0 && arr[y] > chave) {
             arr[y + 1] = arr[y];
             y = y - 1;
@@ -16,26 +18,27 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-// Função para imprimir o array
-void imprimirArray(int arr[], int n) {
-    for (int x = 0; x < n; x++) {
-        printf("%d ", arr[x]);
-    }
-    printf("\n");
-}
-
-// Função principal
 int main() {
-    int numeros[] = {5, 3, 8, 4, 2};
-    int n = sizeof(numeros) / sizeof(numeros[0]);
+    srand(time(0));
 
-    printf("Array antes da ordenação:\n");
-    imprimirArray(numeros, n);
+    int numerosAleatorios[100];
 
-    insertionSort(numeros, n);
+    for (int i = 0; i < 100; i++) {
+        numerosAleatorios[i] = rand() % 101;
+    }
 
-    printf("Array após a ordenação:\n");
-    imprimirArray(numeros, n);
+    int n = sizeof(numerosAleatorios) / sizeof(numerosAleatorios[0]);
+
+    clock_t inicio = clock();
+
+    // ordenar o array
+    insertionSort(numerosAleatorios, n);
+
+    clock_t fim = clock();
+
+    double tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+
+    printf("Tempo de execução do Insertion Sort: %f segundos\n", tempo_execucao);
 
     return 0;
 }
