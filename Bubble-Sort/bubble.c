@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 // Função Bubble Sort
 void bubbleSort(int arr[], int n) {
@@ -22,26 +24,30 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-// Função para imprimir o array
-void imprimirArray(int arr[], int n) {
-    for (int x = 0; x < n; x++) {
-        printf("%d ", arr[x]);
-    }
-    printf("\n");
-}
 
-// Função principal
 int main() {
-    int numeros[] = {5, 3, 8, 4, 2};
-    int n = sizeof(numeros) / sizeof(numeros[0]);
+    srand(time(0));
 
-    printf("Array antes da ordenação:\n");
-    imprimirArray(numeros, n);
+    int numerosAleatorios[100];
 
-    bubbleSort(numeros, n);
+    for(int i = 0; i < 100; i++) {
+        numerosAleatorios[i] = rand() % 101;
+    }
 
-    printf("Array após a ordenação:\n");
-    imprimirArray(numeros, n);
+    int n = sizeof(numerosAleatorios) / sizeof(numerosAleatorios[0]);
+
+    // Inicia o temporizador
+    clock_t inicio = clock();
+
+    // Chama a função bubbleSort para ordenar o array
+    bubbleSort(numerosAleatorios, n);
+
+    clock_t fim = clock();
+
+    // Calcula o tempo de execução em segundos
+    double tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
+
+    printf("Tempo de execucao do Bubble Sort: %f segundos\n", tempo_execucao);
 
     return 0;
 }
