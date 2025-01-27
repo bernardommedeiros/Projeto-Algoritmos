@@ -44,7 +44,7 @@ int main() {
 
     double tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
-    printf("Tempo de execucao do Bubble Sort: %f segundos\n", tempo_execucao);
+    printf("tempo de execucao: %f segundos\n", tempo_execucao);
 
     return 0;
 }
