@@ -2,34 +2,28 @@
 #include <stdlib.h>
 #include <time.h>
 
-void bubbleSort(int arr[], int n) {
-    int x, y, temp;
-    int troca;
-    for (x = 0; x < n - 1; x++) {
-        troca = 0; // verifica troca
-        for (y = 0; y < n - 1 - x; y++) {
-            if (arr[y] > arr[y + 1]) {
-                // troca os elementos
-                temp = arr[y];
-                arr[y] = arr[y + 1];
-                arr[y + 1] = temp;
-                troca = 1;
-            }
+
+void insertionSort(int arr[], int n) {
+    int x, y, chave;
+    for (x = 1; x < n; x++) {
+        chave = arr[x];
+        y = x - 1;
+
+        // move os elementos maiores que a chave uma posição à frente
+        while (y >= 0 && arr[y] > chave) {
+            arr[y + 1] = arr[y];
+            y = y - 1;
         }
-        
-        if (!troca) {
-            break;
-        }
+        arr[y + 1] = chave;
     }
 }
-
 
 int main() {
     srand(time(0));
 
     int numerosAleatorios[100000];
 
-    for(int i = 0; i < 100000; i++) {
+    for (int i = 0; i < 100000; i++) {
         numerosAleatorios[i] = rand() % 100001;
     }
 
@@ -38,13 +32,13 @@ int main() {
     clock_t inicio = clock();
 
     // ordenar o array
-    bubbleSort(numerosAleatorios, n);
+    insertionSort(numerosAleatorios, n);
 
     clock_t fim = clock();
 
     double tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
-    printf("Tempo de execucao do Bubble Sort: %f segundos\n", tempo_execucao);
+    printf("Tempo de execução do Insertion Sort: %f segundos\n", tempo_execucao);
 
     return 0;
 }
