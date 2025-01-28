@@ -26,13 +26,17 @@ void bubbleSort(int arr[], int n) {
 int main() {
     srand(time(0));
 
-    int numerosAleatorios[1000000];
+    int *numerosAleatorios = (int *)malloc(1000000 * sizeof(int));
+    if (numerosAleatorios == NULL) {
+        printf("Erro ao alocar memoria\n");
+        return 1;
+    }
 
     for(int i = 0; i < 1000000; i++) {
         numerosAleatorios[i] = rand() % 1000001;
     }
 
-    int n = sizeof(numerosAleatorios) / sizeof(numerosAleatorios[0]);
+    int n = 1000000;
 
     clock_t inicio = clock();
 
@@ -43,6 +47,8 @@ int main() {
     double tempo_execucao = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
 
     printf("Tempo de execucao: %f segundos\n", tempo_execucao);
+
+    free(numerosAleatorios);
 
     return 0;
 }
