@@ -7,52 +7,52 @@ tempos de execução no teste com 100 elementos:
 teste 1 - 0.000009 segundos
 teste 2 - 0.000009 segundos
 teste 3 - 0.000007 segundos
-teste 4 - 0.000009 segundos
+teste 4 - 0.000010 segundos
 
-média = 0.0 segundos.
+média = 0.000008 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução no teste com 1.000 elementos, em segundos:
 
-teste 1 - 0
-teste 2 - 0
-teste 3 - 0
-teste 4 - 0
+teste 1 - 0.000590 segundos
+teste 2 - 0.000604 segundos
+teste 3 - 0.000593 segundos
+teste 4 - 0.000615 segundos
 
-média = 0.0 segundos.
+média = 0.000600 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução no teste com 10.000 elementos, em segundos:
 
-teste 1 - 0
-teste 2 - 0
-teste 3 - 0
-teste 4 - 0
+teste 1 - 0.045174 segundos
+teste 2 - 0.050011 segundos
+teste 3 - 0.045403 segundos
+teste 4 - 0.055229 segundos
 
-média = 0.0 segundos.
+média = 0.048954 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução no teste com 100.000 elementos, em segundos:
 
-teste 1 - 0
-teste 2 - 0
-teste 3 - 0
-teste 4 - 0
+teste 1 - 4.681103 segundos
+teste 2 - 4.696949 segundos
+teste 3 - 4.724651 segundos
+teste 4 - 4.762847 segundos
 
-média = 0.0 segundos.
+média = 4.7163875 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução, com 1.000.000 elementos, em segundos/minutos:
 
-teste 1 - 0
-teste 2 - 0
-teste 3 - 0
-teste 4 - 0
+teste 1 - 465.148574 segundos (7.75 minutos)
+teste 2 - 464.442286 segundos (7.74 minutos)
+teste 3 - 463.907355 segundos (7.73 minutos)
+teste 4 - 464.907153 segundos (7.75 minutos)
 
-média = 0.0 segundos / 0.0 minutos.
+média = 464.601342 segundos / 7.74 minutos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
