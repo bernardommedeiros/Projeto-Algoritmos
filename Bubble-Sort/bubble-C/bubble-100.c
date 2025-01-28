@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Função Bubble Sort
 void bubbleSort(int arr[], int n) {
     int x, y, temp;
     int troca;

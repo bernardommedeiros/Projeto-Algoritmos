@@ -4,55 +4,55 @@ Medição do tempo de execução na linguagem C - Bubble sort
 
 tempos de execução no teste com 100 elementos:
 
-teste 1 - 0.000028 segundos
-teste 2 - 0.000029 segundos
-teste 3 - 0.000043 segundos
-teste 4 - 0.000039 segundos
+teste 1 - 0.000000 segundos
+teste 2 - 0.000000 segundos
+teste 3 - 0.000000 segundos
+teste 4 - 0.000000 segundos
 
-tempo de execução médio = 0.000034 segundos.
+tempo de execução médio = 0.000000 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução no teste com 1.000 elementos, em segundos:
 
-teste 1 - 0.001458 segundos
-teste 2 - 0.004823 segundos
-teste 3 - 0.002427 segundos
-teste 4 - 0.002442 segundos
+teste 1 -  0.007000 segundos
+teste 2 - 0.007000 segundos
+teste 3 - 0.008000 segundos
+teste 4 - 0.009000 segundos
 
-tempo de execução médio = 0.002787 segundos.
+tempo de execução médio = 0.007750 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução no teste com 10.000 elementos, em segundos:
 
-teste 1 - 0.136598 segundos
-teste 2 - 0.134008 segundos
-teste 3 - 0.137679 segundos
-teste 4 - 0.154621 segundos
+teste 1 - 0.004800 segundos
+teste 2 - 0.005200 segundos
+teste 3 - 0.004600 segundos
+teste 4 - 0.004500 segundos
 
-tempo de execução médio = 0.140726 segundos.
+tempo de execução médio = 0.004775 segundos segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução no teste com 100.000 elementos, em segundos:
 
-teste 1 - 32.310479 segundos
-teste 2 - 32.323378 segundos
-teste 3 - 31.742843 segundos
-teste 4 - 23.337160 segundos
+teste 1 - 0.115770 segundos
+teste 2 - 0.115760 segundos
+teste 3 - 0.115760 segundos
+teste 4 - 0.118820 segundos
 
-tempo de execução médio = 29.928465 segundos.
+tempo de execução médio = 0.116528 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 tempos de execução, com 1.000.000 elementos, em segundos/minutos:
 
-teste 1 - 1223.132641 segundos  (20.39 minutos)
-teste 2 - 1230.660180 segundos (20.51 minutos)
-teste 3 - 1208.535378 segundos (20.14 minutos)
-teste 4 - 1212.609760 segundos
+teste 1 - 1.532813 segundos
+teste 2 - 1.687574 segundos
+teste 3 - 1.437258 segundos (24 minutos)
+teste 4 - 1.409450 segundos 23.490,83 minutos
 
-tempo de execução médio = 0.0 segundos / 0.0 minutos.
+tempo de execução médio = 1.516774 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
