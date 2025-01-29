@@ -1,1 +1,1 @@
-# Projeto-Algoritmos
+[Bernardo Moura](https://github.com/bernardommedeiros)
