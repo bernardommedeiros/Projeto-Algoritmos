@@ -37,12 +37,12 @@ tempo de execução médio = 0.004775 segundos segundos.
 
 tempos de execução no teste com 100.000 elementos, em segundos:
 
-teste 1 - 0.115770 segundos
-teste 2 - 0.115760 segundos
-teste 3 - 0.115760 segundos
-teste 4 - 0.118820 segundos
+teste 1 - 18.313000 segundos
+teste 2 - 18.130000 segundos
+teste 3 - 20.403000 segundos
+teste 4 - 21.540000 segundos 
 
-tempo de execução médio = 0.116528 segundos.
+tempo de execução médio = 19.596500 segundos.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

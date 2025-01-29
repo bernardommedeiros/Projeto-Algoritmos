@@ -28,24 +28,23 @@ public class bubble1000000 {
     public static void main(String[] args) {
         Random rand = new Random();
 
-        int[] numerosAleatorios = new int[1000000]; 
+        int[] numerosAleatorios = new int[1000000]; // Array com 1 milhão de elementos
 
         for (int i = 0; i < 1000000; i++) {
-            numerosAleatorios[i] = rand.nextInt(101);
+            numerosAleatorios[i] = rand.nextInt(1000001); // Gera valores aleatórios entre 0 e 1.000.000
         }
 
         int n = numerosAleatorios.length;
 
         long inicio = System.currentTimeMillis();
 
-        // ordenar o array
+        // Ordenar o array
         bubbleSort(numerosAleatorios);
 
         long fim = System.currentTimeMillis();
 
-        double tempoExecucao = (fim - inicio) / 1000000.0;
+        double tempoExecucao = (fim - inicio) / 1000.0;
 
         System.out.printf("Tempo de execução: %.6f segundos%n", tempoExecucao);
     }
 }
-

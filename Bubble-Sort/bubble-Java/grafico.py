@@ -6,7 +6,7 @@ plt.switch_backend('tkAgg')
 
 # Medir tempos de execução para diferentes tamanhos de entrada
 entradas = [100, 1000, 10000, 100000, 1000000]
-tempos = [0.000008, 0.000600, 0.048954, 4.7163875, 464.601342]
+tempos = [0.000000, 0.007750, 0.004775, 19.596500,  ]
 
 # Converter para numpy arrays para manipulação
 entradas = np.array(entradas)
@@ -23,7 +23,7 @@ plt.plot(x_novo, y_suave, label="Tempo de execução", color="blue")
 plt.scatter(entradas, tempos, color="red", label="Entrada")  # Mostrar os pontos reais
 plt.xscale("log")  # Escala logarítmica para o eixo X
 plt.yscale("linear")
-plt.title("Entrada x Tempo de execução em C", fontsize=18)
+plt.title("Entrada x Tempo de execução em Java", fontsize=18)
 plt.xlabel("Tamanho da entrada (n)", fontsize=12)
 plt.ylabel("Tempo de execução (s)", fontsize=12)
 plt.grid(True, which="both", linestyle="--", linewidth=0.5)

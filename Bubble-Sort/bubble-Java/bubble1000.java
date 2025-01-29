@@ -31,7 +31,7 @@ public class bubble1000 {
         int[] numerosAleatorios = new int[1000]; // Ajustado para 1000
 
         for (int i = 0; i < 1000; i++) {
-            numerosAleatorios[i] = rand.nextInt(101);
+            numerosAleatorios[i] = rand.nextInt(1001);
         }
 
         int n = numerosAleatorios.length;
