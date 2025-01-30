@@ -6,7 +6,7 @@ plt.switch_backend('tkAgg')
 
 # Medir tempos de execução para diferentes tamanhos de entrada
 entradas = [100, 1000, 10000, 100000, 1000000]
-tempos = [0.000000, 0.007750, 0.004775, 19.596500,  ]
+tempos = [0000000, 0.007750, 0.004775, 19.596500, 151677400 ]
 
 # Converter para numpy arrays para manipulação
 entradas = np.array(entradas)
