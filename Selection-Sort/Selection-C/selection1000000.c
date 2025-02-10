@@ -28,10 +28,10 @@ void selectionSort(int arr[], int n) {
 int main() {
     srand(time(0));
 
-    int numerosAleatorios[100];
+    int numerosAleatorios[1000000];
 
-    for (int i = 0; i < 100; i++) {
-        numerosAleatorios[i] = rand() % 101;
+    for (int i = 0; i < 1000000; i++) {
+        numerosAleatorios[i] = rand() % 1000001;
     }
 
     int n = sizeof(numerosAleatorios) / sizeof(numerosAleatorios[0]);
